@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+react-app/
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+
+# React build folder (if using create-react-app inside subfolder)
+react-app/build/

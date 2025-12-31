@@ -1,0 +1,19 @@
+{
+  "name": "teamproject-1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Front-end project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server ./ -p 3000 -c-1",
+    "serve": "npx http-server ./ -p 3000 -c-1",
+    "build": "echo \"No build step configured\" && exit 0",
+    "test": "echo \"No tests\" && exit 0",
+    "lint": "npx eslint . --ext .js,.jsx"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "author": "",
+  "license": "MIT"
+}

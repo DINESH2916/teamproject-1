@@ -115,6 +115,137 @@ p {
     text-align: center;
 }
 
+/* Skip-link for keyboard users */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: #fff;
+    color: #111;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 56px; }
+    .hero p { font-size: 20px; }
+    .logo { width: 160px; }
+}
+
+@media (max-width: 768px) {
+    .hero { height: auto; padding: 60px 20px; }
+    .hero-box { padding: 40px; }
+    .hero h1 { font-size: 40px; }
+    .hero p { font-size: 18px; }
+    .hero button { padding: 12px 28px; font-size: 16px; }
+
+    .card-section { padding: 30px; margin: 40px auto; }
+    .grid-3, .grid-2 { grid-template-columns: 1fr; gap: 20px; }
+    .logo { width: 120px; }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 32px; }
+    .hero p { font-size: 16px; }
+    .hero-box { padding: 30px; border-radius: 18px; }
+}
+
+/* FOUNDER section */
+.founder-section h3 {
+    font-size: 28px;
+    margin-top: 8px;
+    color: #111;
+}
+.founder-section ul {
+    margin-top: 16px;
+    list-style: disc inside;
+    font-size: 20px;
+    color: #111;
+}
+.founder-images {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.founder-img, .team-img {
+    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 1024px) {
+    .founder-section h3 { font-size: 24px; }
+}
+@media (max-width: 768px) {
+    .founder-section { gap: 20px; }
+    .founder-images { flex-direction: row; }
+    .founder-img, .team-img { width: 50%; height: 220px; }
+}
+
+/* CORE COACHING TEAM */
+.coaching-section h2 {
+    margin-bottom: 20px;
+}
+.coach-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.coach h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.coach ul {
+    list-style: disc inside;
+    color: #111;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .coach-list { grid-template-columns: 1fr; }
+}
+
+/* AIFF & STATE YOUTH LEAGUE */
+.league-section h2 { margin-bottom: 16px; }
+.league-content h3 { font-size: 20px; margin-top: 14px; margin-bottom: 8px; }
+.league-content p { color: #111; line-height: 1.6; margin-bottom: 12px; }
+
+@media (max-width: 480px) {
+    .coach h3 { font-size: 18px; }
+    .league-content h3 { font-size: 18px; }
+}
+
+/* VISION section */
+.vision-section ul {
+    list-style: disc inside;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #111;
+}
+.vision-section .img {
+    border-radius: 12px;
+    height: auto;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .vision-section ul { font-size: 18px; }
+}
+@media (max-width: 480px) {
+    .vision-section ul { font-size: 16px; }
+}
+
+
 
 
 
