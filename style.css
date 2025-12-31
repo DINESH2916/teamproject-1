@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #f5c400, #e0aa00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-box {
+    text-align: center;
+    padding: 70px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    color: #111;
+}
+
+.hero p {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #111;
+}
+
+.hero button {
+    padding: 16px 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: #111;
+    color: #f5c400;
+}
+
+/* COMMON CARD */
+.card-section {
+    width: 90%;
+    margin: 100px auto;
+    padding: 60px;
+    border-radius: 30px;
+    background: #f5c400;
+    box-shadow: 0 0 50px rgba(245,196,0,0.6);
+    transition: 0.4s;
+}
+
+.card-section:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* GRID LAYOUTS */
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.reverse {
+    direction: rtl;
+}
+
+.reverse * {
+    direction: ltr;
+}
+
+/* IMAGES */
+.img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* TEXT */
+h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #111;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+
+
+
+
